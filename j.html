@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+
+<div id="f" style="background:blue; height: 300px; width: 300px; display: none">
+	
+</div>
+<input type="button" id="in" name="btn" value="Fadein">
+<input type="button" id="out" name="btn" value="Fadeout">
+<br>
+
+<div id="d" style="background: red; height: 200px; width: 200px" ></div>
+<input type="button" id="hide" name="btn" value="hide">
+<input type="button" id="show" name="btn" value="show">
+
+
+</body>
+</html>
+<script type="text/javascript">
+//fadein
+
+$(document).ready(function(){
+	$("#in").click(function(){
+		$("#f").fadeIn(2000);
+	});
+});
+
+//fadeout
+
+$(document).ready(function(){
+	$("#out").click(function(){
+		$("#f").fadeOut(2000);
+	});
+});
+
+//hide
+$(document).ready(function(){
+	$("#hide").click(function(){
+		$("#d").hide();
+	});
+});
+
+//show
+$(document).ready(function(){
+	$("#show").click(function(){
+		$("#d").show();
+	});
+});
+</script>
